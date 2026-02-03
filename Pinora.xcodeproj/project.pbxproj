@@ -11,6 +11,7 @@
 		AC0B73502F319C050034874D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC0B734F2F319C050034874D /* ContentView.swift */; };
 		AC0B73522F319C070034874D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC0B73512F319C070034874D /* Assets.xcassets */; };
 		AC0B73552F319C070034874D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC0B73542F319C070034874D /* Preview Assets.xcassets */; };
+		AC0B73602F319D000034874D /* FirebaseCore in Frameworks */ = {isa = PBXBuildFile; productRef = AC0B735F2F319D000034874D /* FirebaseCore */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC0B73602F319D000034874D /* FirebaseCore in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +85,9 @@
 			dependencies = (
 			);
 			name = Pinora;
+			packageProductDependencies = (
+				AC0B735F2F319D000034874D /* FirebaseCore */,
+			);
 			productName = Pinora;
 			productReference = AC0B734A2F319C050034874D /* Pinora.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +116,9 @@
 				Base,
 			);
 			mainGroup = AC0B73412F319C050034874D;
+			packageReferences = (
+				AC0B735E2F319D000034874D /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = AC0B734B2F319C050034874D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -275,6 +283,8 @@
 				DEVELOPMENT_TEAM = N34R95FMY2;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Pinora;
+				INFOPLIST_KEY_CFBundleVersion = "$(CURRENT_PROJECT_VERSION)";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -304,6 +314,8 @@
 				DEVELOPMENT_TEAM = N34R95FMY2;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Pinora;
+				INFOPLIST_KEY_CFBundleVersion = "$(CURRENT_PROJECT_VERSION)";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -344,6 +356,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		AC0B735E2F319D000034874D /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		AC0B735F2F319D000034874D /* FirebaseCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AC0B735E2F319D000034874D /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseCore;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = AC0B73422F319C050034874D /* Project object */;
 }
